@@ -8,12 +8,12 @@ In order to run the project locally:<br />
 
 #Container<br />
 In order to build, tag & push an image run the following commands:<br />
-`docker image build -t env_vars .` (build)
-`docker tag env_vars <repo-name>:<tag-name>` (tag)
+`docker image build -t <tag> .` (build)
+`docker tag <tag> <repo-name>:<tag-name>` (tag)
 `docker push <repo-name>:<tag-name>` (push)
 
 If you want to run the container locally:<br />
-`docker run -d -p 5000:5000 env_vars`<br />
+`docker run -d -p 5000:5000 <tag>`<br />
 and test the following url - `localhost:5000/healthy`<br />
 or `localhost:5000/get_variable/<any_env_var>`<br />
 
