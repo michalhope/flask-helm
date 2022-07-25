@@ -24,4 +24,4 @@ Orders for helm deployment to kubernetes:
 - In order to deploy changes run:<br />
   `helm upgrade --set image.tag=<tag-name>  <helm-release-name> helm/envVarChart`
 - In order to uninstall the release from kubernetes:<br />
-  `helm install <helm-release-name>`
+  `helm uninstall <helm-release-name>`
